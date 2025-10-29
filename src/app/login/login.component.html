@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center align-items-center vh-100 main">
+  <div class="form-signin w-100 m-auto">
+    <form (submit)="onSignIn(signInForm)" #signInForm="ngForm">
+      <h1 class="h3 mb-3 fw-normal text-light">Bienvenido</h1>
+      <div class="form-floating">
+        <input class="form-control" type="email" placeholder="email" id="email" name="email" ngModel
+          #emailInput="ngModel" [(ngModel)]="emailaddress">
+        <label for="floatingInput" class="input">Email</label>
+      </div>
+      <div class="form-floating">
+        <input class="form-control" type="password" placeholder="Password" id="password" name="password" ngModel
+          #passwordInput="ngModel" [(ngModel)]="password">
+        <label for="floatingPassword" class="input">Contraseña</label>
+      </div>
+      <button class="btn btn-primary w-100 py-2" type="submit">Iniciar Sesion</button>
+    </form>
+  </div>
+</div>
