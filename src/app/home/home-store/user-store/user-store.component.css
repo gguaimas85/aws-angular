@@ -36,3 +36,48 @@
     line-height: 1.2;
     margin-bottom: 1rem;
 }
+
+
+
+.centered-sales-area {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+
+.articulo-selector,
+.venta-actual {
+    margin-bottom: 0;
+}
+
+.card-title {
+    color: #343a40;
+    border-bottom: 2px solid #ec05c1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.total-venta {
+    font-size: 1.2em;
+    color: #ec05c1;
+    padding-top: 0.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
