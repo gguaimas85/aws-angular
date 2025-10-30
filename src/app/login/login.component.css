@@ -1,25 +1,84 @@
 .main{
-  background-color: rgb(71, 68, 68);
+    background-image: url('../img/4975900.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(71, 68, 68);
+    position: relative;
 }
 
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+
 .form-signin {
-  max-width: 330px;
-  padding: 1rem;
+    max-width: 330px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.form-signin h1 {
+    /* Centrado ya está con Bootstrap 'text-center' en el HTML */
+
+    font-family: 'Monoton', cursive; /* Aplica la fuente de neón */
+    font-size: 1.8em; /* Ajusta el tamaño de la fuente si es necesario */
+    color: #ec05c1; /* Color base del texto (blanco para el neón) */
+    text-shadow:
+        0 0 10px rgb(0, 225, 255),   /* Azul cian brillante */
+        0 0 20px rgb(0, 221, 255),   /* Más brillo */
+        0 0 30px #0ff,   /* Aún más brillo */
+        0 0 40px #f0f,   /* Un toque de magenta para el brillo exterior */
+        0 0 70px #f0f,
+        0 0 80px #f0f,
+        0 0 100px #f0f,
+        0 0 150px #f0f;
+    line-height: 1.2; /* Ajusta el espaciado entre líneas si el título es largo */
+    margin-bottom: 1rem; /* Espaciado debajo del título */
 }
 
 .form-signin .form-floating:focus-within {
-  z-index: 2;
+    z-index: 2;
 }
 
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+
+.form-floating > label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.form-signin input[type="email"]:focus,
+.form-signin input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
-

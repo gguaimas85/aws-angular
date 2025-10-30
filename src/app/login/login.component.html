@@ -1,7 +1,14 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.component.html">
+</head>
+
 <div class="d-flex justify-content-center align-items-center vh-100 main">
   <div class="form-signin w-100 m-auto">
     <form (submit)="onSignIn(signInForm)" #signInForm="ngForm">
-      <h1 class="h3 mb-3 fw-normal text-light">Bienvenido</h1>
+      <h1 class="h3 mb-3 fw-normal text-light text-center">Kiosco Full 7 x 24</h1>
       <div class="form-floating">
         <input class="form-control" type="email" placeholder="email" id="email" name="email" ngModel
           #emailInput="ngModel" [(ngModel)]="emailaddress">
