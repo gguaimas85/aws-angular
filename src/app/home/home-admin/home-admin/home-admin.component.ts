@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CognitoServiceService } from '../../../services/cognito-service.service';
 
 @Component({
   selector: 'app-home-admin',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HomeAdminComponent {
 
+  constructor(private authService: CognitoServiceService) {}
+
+  logOut() {
+    this.authService.logOut();
+  }
 }

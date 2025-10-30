@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CognitoServiceService } from '../../../services/cognito-service.service';
 
 @Component({
   selector: 'app-user-store',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class UserStoreComponent {
 
+  constructor(private authService: CognitoServiceService) {}
+
+  logOut() {
+    this.authService.logOut();
+  }
 }
